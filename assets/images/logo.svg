@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 64" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Lightning Power Gradient -->
+    <linearGradient id="navBoltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB347"/>
+      <stop offset="35%" stop-color="#FF6B00"/>
+      <stop offset="100%" stop-color="#D94800"/>
+    </linearGradient>
+
+    <!-- Brushed Steel Facet - Light -->
+    <linearGradient id="navSteelLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+
+    <!-- Brushed Steel Facet - Dark -->
+    <linearGradient id="navSteelDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Plinth Gradient -->
+    <linearGradient id="navPlinth" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#64748B"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+
+    <!-- Orange Text Glow -->
+    <filter id="textOrangeGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="0" stdDeviation="1.5" flood-color="#FF6B00" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- ================= BRAND EMBLEM (Left) ================= -->
+  <g transform="translate(4, 2)">
+    <!-- Shield / Badge Frame -->
+    <rect x="0" y="0" width="58" height="58" rx="8" fill="#081426" stroke="rgba(255, 107, 0, 0.4)" stroke-width="1.2"/>
+    <rect x="2" y="2" width="54" height="54" rx="6" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="0.8"/>
+
+    <!-- Left Mountain Peak -->
+    <polygon points="8,47 22,21 19,47" fill="url(#navSteelLight)"/>
+    <polygon points="22,21 30,33 19,47" fill="url(#navSteelDark)"/>
+    <line x1="22" y1="21" x2="19" y2="47" stroke="#FFFFFF" stroke-width="0.7"/>
+
+    <!-- Right Mountain Peak (Summit) -->
+    <polygon points="23,47 38,12 34,47" fill="url(#navSteelLight)"/>
+    <polygon points="38,12 50,47 34,47" fill="url(#navSteelDark)"/>
+    <line x1="38" y1="12" x2="34" y2="47" stroke="#FFFFFF" stroke-width="0.8"/>
+
+    <!-- Central Lightning Surge -->
+    <polygon points="37,11 27,27 34,27 25,47 39,24 32,24" 
+             fill="url(#navBoltGrad)" 
+             stroke="#FFFFFF" 
+             stroke-width="0.6" 
+             stroke-linejoin="round"/>
+
+    <!-- Beacon Dome & Flare -->
+    <path d="M35 11 C35 7, 41 7, 41 11 Z" fill="url(#navBoltGrad)"/>
+    <circle cx="38" cy="9.5" r="1.2" fill="#FFFFFF"/>
+    <line x1="38" y1="5" x2="38" y2="7" stroke="#FFA439" stroke-width="1.2" stroke-linecap="round"/>
+    <line x1="42" y1="6.5" x2="40.5" y2="8.5" stroke="#FFA439" stroke-width="1" stroke-linecap="round"/>
+    <line x1="34" y1="6.5" x2="35.5" y2="8.5" stroke="#FFA439" stroke-width="1" stroke-linecap="round"/>
+
+    <!-- Base Plinth -->
+    <rect x="7" y="48.5" width="44" height="3.5" rx="1" fill="url(#navPlinth)" stroke="#FF6B00" stroke-width="0.6"/>
+    <circle cx="11" cy="50.2" r="0.8" fill="#FFA439"/>
+    <circle cx="29" cy="50.2" r="0.8" fill="#FFA439"/>
+    <circle cx="47" cy="50.2" r="0.8" fill="#FFA439"/>
+  </g>
+
+  <!-- ================= TYPOGRAPHY (Right) ================= -->
+  <!-- Brand Name Line -->
+  <text x="74" y="32" 
+        font-family="system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, sans-serif" 
+        font-size="21" 
+        font-weight="900" 
+        letter-spacing="0.03em">
+    <tspan fill="#FFFFFF">EVEREST </tspan>
+    <tspan fill="url(#navBoltGrad)" filter="url(#textOrangeGlow)">ENTERPRISES</tspan>
+  </text>
+
+  <!-- Subtitle Tagline Plinth Bar -->
+  <g transform="translate(74, 38)">
+    <!-- Dark Architectural Tag Bar -->
+    <rect x="0" y="0" width="298" height="15" rx="3" fill="#0C1B30" stroke="rgba(255, 107, 0, 0.35)" stroke-width="0.8"/>
+    <!-- Orange Left Indicator Chip -->
+    <rect x="0" y="0" width="4" height="15" rx="1.5" fill="url(#navBoltGrad)"/>
+    <!-- Descriptor Text -->
+    <text x="12" y="10.8" 
+          font-family="system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, monospace, sans-serif" 
+          font-size="7.6" 
+          font-weight="700" 
+          letter-spacing="0.14em" 
+          fill="#CBD5E1">ENGINEERING • ELECTRICAL • INFRASTRUCTURE</text>
+  </g>
+</svg>
